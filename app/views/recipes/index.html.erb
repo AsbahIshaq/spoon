@@ -3,6 +3,6 @@
 </div>
 <div class="pagination">
   <% (1..@total_pages).each do |page_num| %>
-    <%= link_to page_num, recipes_path(page: page_num), id: "recipe_page_#{page_num}", class: 'pagination_item', remote: true %>
+    <%= link_to page_num, recipes_path(page: page_num), id: "recipe_page_#{page_num}", class: "pagination_item #{'active' if @page_num.to_i == page_num}", remote: true %>
   <% end %>
 </div>

@@ -18,9 +18,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'jquery-rails'
 gem 'contentful'
 gem 'contentful_model'
-gem 'pry'
 gem 'dotenv-rails', groups: [:development, :test]
-gem 'rspec'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -31,6 +30,11 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'pry'
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'vcr'
+  gem 'rails-controller-testing'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 

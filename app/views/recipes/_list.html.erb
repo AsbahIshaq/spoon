@@ -4,7 +4,7 @@
       <div class="contentful-title">
         <h1><%= recipe.title %></h1>
       </div>
-      <img src="<%= recipe.photo.url %>" width=600 height=400 />
+      <img src="<%= recipe.photo&.url %>" width=600 height=400 style="background-image:url(<%=asset_path('image_not_found.jpg') %>)" />
     </div>
   <% end %>
 <% end %>
