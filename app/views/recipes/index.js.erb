@@ -1,0 +1,3 @@
+$(".pagination_item").removeClass('active');
+$("#recipe_page_<%=@page_num%>").addClass('active')
+$('#recipes_list').html('<%=j render partial: 'list', locals: { recipes: @recipes } %>')

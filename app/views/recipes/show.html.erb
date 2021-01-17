@@ -1,0 +1,16 @@
+<% if @recipe.present? %>
+  <div class="contentful_product">
+    <h1><%= @recipe.title %></h1>
+    <img src="<%= @recipe.photo&.url %>" width=600 height=400 />
+    <p>
+      <b>Description</b>
+    </p>
+    <p><%= @recipe.description %></p>
+    <p>Calories: <%= @recipe.calories %></p>
+    <% if @recipe.chef %>
+      <p>Chef: <%= @recipe.chef.name %></p>
+    <% end %>
+    <p>Tags: <%= format_tags(@recipe.tags) %></p>
+  </div>
+<% end %>
+<%= link_to 'back to list', recipes_path %>

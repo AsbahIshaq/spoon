@@ -1,0 +1,8 @@
+<div id='recipes_list'>
+  <%= render partial: 'list', locals: {recipes: @recipes} %>
+</div>
+<div class="pagination">
+  <% (1..@total_pages).each do |page_num| %>
+    <%= link_to page_num, recipes_path(page: page_num), id: "recipe_page_#{page_num}", class: 'pagination_item', remote: true %>
+  <% end %>
+</div>
