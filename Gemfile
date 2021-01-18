@@ -36,6 +36,7 @@ group :development, :test do
   gem 'vcr'
   gem 'rails-controller-testing'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rubocop-rails', require: false
 end
 
 group :development do
