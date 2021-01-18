@@ -20,7 +20,12 @@ class RecipesController < ApplicationController
   end
 
   def show
-    @recipe = Recipe.find(params[:id])
+    @recipe = Recipe.find_recipe(params[:id])
+    if @recipe.nil?
+      render_404
+    elsif !@recipe
+      render_server_error
+    end
   end
 
   def strong_params
