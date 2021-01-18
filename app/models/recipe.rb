@@ -22,7 +22,7 @@ class Recipe < ContentfulModel::Base
   def self.handle_error(error)
     error_class   = error.class.to_s
     error_message = handle_http_exceptions(error_class, error.message)
-    Rails.logger.error error_class + " --- " + error_message
+    Rails.logger.error "#{error_class} --- #{error_message}"
     false
   end
 end

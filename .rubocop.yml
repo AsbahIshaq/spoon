@@ -1,0 +1,65 @@
+require:
+  - rubocop-rails
+
+AllCops:
+  Exclude:
+    - 'Gemfile'
+    - 'bin/'
+    - 'Rakefile'
+    - 'app/channels/'
+    - 'app/helpers/application_helper.rb'
+    - 'test/'
+    - 'node_modules/'
+    - 'spec/rails_helper.rb'
+    - 'config/'
+
+Layout:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Metrics:
+  Enabled: false
+
+Lint:
+  Enabled: false
+
+Style/BlockComments:
+  Enabled: false
+
+Style/GlobalVars:
+  Enabled: false
+
+Style/RedundantFetchBlock:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/StderrPuts:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Rails/FilePath:
+  Enabled: false
+
+Style/RedundantBegin:
+  Enabled: false
+
+Naming/RescuedExceptionsVariableName:
+  Enabled: false
+
+Style/ConditionalAssignment: 
+  Enabled: false
+
+Style/RedundantSelf:
+  Enabled: false
+
+Naming/VariableNumber:
+  Enabled: false
