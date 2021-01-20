@@ -18,7 +18,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'jquery-rails'
 gem 'contentful'
 gem 'contentful_model'
-gem 'dotenv-rails', groups: [:development, :test]
+gem 'dotenv-rails'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
