@@ -1,7 +1,7 @@
 <% if @recipe.present? %>
   <div class="contentful_product">
     <h1><%= @recipe.title %></h1>
-    <img src="<%= @recipe.photo&.url %>" width=600 height=400 />
+    <img src="<%= @recipe.photo&.url %>" width=600 height=400 style="background-image:url(<%=asset_path('image_not_found.jpg') %>)" />
     <p>
       <b>Description</b>
     </p>

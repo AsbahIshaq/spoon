@@ -9,7 +9,7 @@ module HttpHandable
     elsif error_class == 'Contentful::Unauthorized'
       error_message = "#{error_message} User not authorized"
     else
-      error_message = "#{error_message} Unknown exception while invoking this request #{error_class} *** #{error.message.to_s}"
+      error_message = "#{error_message} Unknown exception while invoking this request"
     end
     error_message
   end
